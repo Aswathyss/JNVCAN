@@ -1,0 +1,47 @@
+.countdown {
+    color: #ffcc00; /* Use the colors from the image */
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .counter-text{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-left: -14px;
+  }
+  .counter-text-last{
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-left: 8px;
+  }
+  .counter-text-main{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2rem;
+    
+  }
+  .counter-text-main span{
+    padding: 5px;
+  }
+  .countdown-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 500px) {
+    .counter-text-main{
+      font-size: 1.6rem;      
+    }
+    .counter-text{
+      font-size: 0.7rem;
+    }
+    .counter-text-last{
+      font-size: 0.7rem;
+    }
+  }

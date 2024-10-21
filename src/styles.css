@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css or global styles */
+@font-face {
+    font-family: 'Porter Sans Block';
+    src: url('./assets/font/porter-sans-block.block.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat-bold';
+    src: url('./assets/font/montserrat.regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }

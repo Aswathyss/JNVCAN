@@ -1,0 +1,157 @@
+<!-- home.component.html -->
+ <div class="main-container">
+<header>
+    <div class="header-items">
+        <div class="logo">
+            <img src="assets/B2H Logo.png" alt="Logo"> <!-- Ensure the logo image is placed in the assets folder -->
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="assets/Facebook_Logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="assets/Instagram_Logo.png" alt="Instagram">
+            </a>
+          </div>
+    </div>
+    
+  </header>
+  <main>
+    <div class="image-container-mobile">
+    <div class="image-container">
+        <div class="content">
+            <div class="text">
+            <p class="text1">
+                Once...<br>
+                 We lived HERE together<br>
+                We studied HERE together<br>
+                We laughed HERE together<br>
+                We cried HERE together<br>
+                We struggled HERE together<br>
+                We had mischief HERE together
+            </p>
+            <p class="text2">Let’s</p>
+            <p class="text3">Repeat<br>
+                Together</p>
+                <button class="register-button" (click)="navigateToRegister()">REGISTER NOW</button>
+            </div>
+            <div class="image">
+              <img src="assets/Repeat Together.png" alt="Repeat Together"> <!-- Replace with your image -->
+            </div>
+          </div>   
+         
+      </div>
+      <div class="small-image-container"></div>     
+    </div>
+      <div class="timer-container">
+        <app-countdown-timer></app-countdown-timer>
+      </div>     
+      <div class="box">
+        <p class="para-1">Back to the Hills 2024</p>
+        <p class="para-2">School reunions are a time to celebrate friendships, new and old. They’re a reminder that
+            we’re all in thi together, and that we’re never truly alone.</p>
+        <p class="para-3"><br>
+            JNV Calicut Alumni Network is organizing the event with
+            accommodations arranged for the overnight stay on
+            Saturday December 28th.</p>
+        <p class="para-4">This reunion is a special opportunity to reflect on our journey at JNV and celebrate the
+            accomplishments of our alumni community. We have come a long way since we graduated,
+            but the memories we made together will last a lifetime.
+            Back to the Hills is a 2 Day long event that is planned for December 28 & 29th of this year.</p>
+        <p class="para-5"><br> 
+                “Hostel days were the best days of our life. Remember the endless laughter, the late night talks, and the
+                shared meals. When we think back about those days, we can’t help but smile. we learned to live
+                together, to share everything, and to support each other through thick and thin. And Back to the Hills
+                2024 gives you a chance to REPEAT that memory TOGETHER again.”<br><br></p>
+        <p class="para-6">Schedule</p>
+        <p class="para-7">10:00AM December 28, 2024 (Saturday) - December 29, 2024 (Sunday)</p>
+        
+        <div class="tabs">
+          <!-- Day 1 and Day 2 tabs -->
+          <button class="tab-button" (click)="showDay(1)" [class.active]="currentDay === 1">DAY 1</button>
+          <button class="tab-button" (click)="showDay(2)" [class.active]="currentDay === 2">DAY 2</button>
+        </div>
+        
+        <!-- Table Template for Day 1 -->
+        <ng-template #day1Template>
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th class="schedule-table-left schedule-table-left-th">Time</th>
+                <th class="schedule-table-middle"></th>
+                <th class="schedule-table-right schedule-table-right-th">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let event of day1Events">
+                <td class="schedule-table-left">{{ event.time }}</td>
+                <td class="schedule-table-middle"></td>
+                <td class="schedule-table-right">{{ event.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-template>
+        <!-- Table Template for Day 2 -->
+        <ng-template #day2Template>
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th class="schedule-table-left">Time</th>
+                <th class="schedule-table-middle"></th>
+                <th class="schedule-table-right">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let event of day2Events">
+                <td class="schedule-table-left">{{ event.time }}</td>
+                <td class="schedule-table-middle"></td>
+                <td class="schedule-table-right">{{ event.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </ng-template>
+        <!-- Dynamically load the template based on the selected day -->
+        <ng-container *ngIf="currentDay === 1">
+          <ng-container *ngTemplateOutlet="day1Template"></ng-container>
+        </ng-container>
+        
+        <ng-container *ngIf="currentDay === 2">
+          <ng-container *ngTemplateOutlet="day2Template"></ng-container>
+        </ng-container>
+        <div class="bottom-container"> 
+          <div class="bottom-container-first">
+            <div><p class="bottom-container-title">Organized by:</p>
+              <img class="img-isolation-mode" src="assets/Isolation_Mode.png" alt="Isolation_Mode">
+              <br>
+              <span class="batch-text bottom-container-body">7th Batch (1993-2000)</span>
+            </div>
+            <div class="alumni-mode-main">
+              <p class="bottom-container-title">Organized by:</p>
+              <div class="alumni-mode-container"> <img class="img-alumni-mode" src="assets/JNV Alumni Logo.png" alt="JNV Alumni Logo">
+                <span class="bottom-container-body">JNV Calicut<br>
+                  Alumni Network</span>
+              </div>
+             </div>
+          </div>
+          <div><p class="bottom-container-title">Contact:</p>
+            <div>
+              <p class="bottom-container-body bottom-container-body-contact">+91 9895228432</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </main>
+  <div class="footer-container">
+    <div>
+    <a class="footer-text" href="https://www.instagram.com">Terms &amp; Conditions</a>
+    <span class="footer-text">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+    <a class="footer-text" href="https://trunkbox-thereflections.blogspot.com">Blog</a>
+  </div>
+  <span class="footer-text">(c) 2024, made with love</span>
+</div>  
+  <footer>
+   
+  </footer>
+</div>
+  
