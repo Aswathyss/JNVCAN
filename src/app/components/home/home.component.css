@@ -50,9 +50,9 @@ header .logo img {
   }
   main {
     position: relative;
-    /* height: calc(100vh - 120px); Adjust the main content height */
-    overflow-y: auto; /* Ensure content is scrollable if it overflows vertically */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    min-width: 320px;
   }
  .image-container .image-mountain {
     width: 100%;
@@ -588,17 +588,17 @@ header .logo img {
       padding-right: 100px;;
     }
     .image-container .text .text1 {
-      font-size: 14px;
+      font-size: .7rem;
       line-height: 18px;
       margin-top: 0px;
     }
     .image-container .text .text2 {
-      font-size: 24px;
+      font-size: 1.2rem;
       line-height: 24px;
       margin-bottom: 0px;
     }
     .image-container .text .text3 {
-      font-size: 32px;
+      font-size: 1.6rem;
       line-height: 32px; 
       margin-top: 8px;
       margin-bottom: 25px; 
@@ -804,3 +804,34 @@ padding-right: 10px;
   line-height: 14.63px;
 }
   }
+  @media only screen and (max-width: 320px){
+  .image-container .image img {
+      width: 330px;
+      height: 253.38px;
+    }
+  .image-container .content {
+      align-items: flex-start;
+    }
+  .schedule-table td {
+      font-size: 0.65rem;
+    }
+  .schedule-table {
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+  .schedule-table td:last-child {
+    min-width: 230px; 
+
+  }
+  .schedule-table th:last-child{
+    min-width: 230px; 
+  }
+  .bottom-contact{
+    padding-top: 10px;
+    text-align: center;
+  }
+  .image-container .text {
+    margin-bottom: 10px 
+  }
+
+}
