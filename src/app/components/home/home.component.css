@@ -830,8 +830,9 @@ padding-right: 10px;
     padding-top: 10px;
     text-align: center;
   }
-  .image-container .text {
-    margin-bottom: 30px 
+  .timer-container {
+    padding: 10px;
+    margin-top: -70px;  /* Adjust as needed to position it at the bottom of the image */
   }
 
 }
