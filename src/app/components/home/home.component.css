@@ -747,7 +747,7 @@ padding-right: 10px;
   .schedule-table td:last-child {
     min-width: 270px; 
     text-align: left;
-    padding-left: 0px; /* Optional: Add some space between columns */
+    padding-left: 0px; 
 
   }
   .schedule-table th:last-child{
