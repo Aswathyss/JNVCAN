@@ -137,19 +137,17 @@ header .logo img {
 
   }
   .register-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 9.05rem;
     height: 2.4rem;
     top: 632px;
     left: 252px;
-    padding: 14px 16px 14px 16px;
-    gap: 10px;
+    padding: 10px 14px 14px 12px;
     opacity: 0px;
     background: #005F73;
     color: white;
     text-transform: uppercase;
+    border-style: none;
   }
   .timer-container {
     display: flex;
@@ -698,14 +696,6 @@ header .logo img {
     margin: 0px;
   }
   .schedule-table {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
-    margin: auto;
-    color: #005F73;
 padding-left: 10px;
 padding-right: 10px;
   }
@@ -803,8 +793,15 @@ padding-right: 10px;
   font-size: 0.6rem;
   line-height: 14.63px;
 }
+.bottom-container-batch{
+  display: flex;
+  flex-direction: column;
+}
+.batch-text{
+  margin-top: 0px;
+}
   }
-  @media only screen and (max-width:360px){
+  @media only screen and (max-width:380px){
   .image-container .image img {
       width: 370px;
       height: 283.38px;
@@ -812,21 +809,14 @@ padding-right: 10px;
     .image-container .content {
       align-items: flex-start;
     }
-  }
-  @media only screen and (max-width: 320px){
-  .image-container .image img {
-      width: 330px;
-      height: 253.38px;
-    }
-  .image-container .content {
-      align-items: flex-start;
-    }
-  .schedule-table td {
+    .schedule-table td {
       font-size: 0.65rem;
     }
   .schedule-table {
-      padding-left: 5px;
-      padding-right: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .schedule-table td:last-child {
     min-width: 230px; 
@@ -835,6 +825,12 @@ padding-right: 10px;
   .schedule-table th:last-child{
     min-width: 230px; 
   }
+  }
+  @media only screen and (max-width: 320px){
+  .image-container .image img {
+      width: 330px;
+      height: 253.38px;
+    }  
   .bottom-contact{
     padding-top: 10px;
     text-align: center;
@@ -843,5 +839,4 @@ padding-right: 10px;
     padding: 5px;
     margin-top: -70px;  /* Adjust as needed to position it at the bottom of the image */
   }
-
 }
