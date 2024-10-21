@@ -5,7 +5,7 @@
     background: #AE2012; 
     margin: 0;
     padding: 0;
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden
   }
 
@@ -49,7 +49,7 @@ header .logo img {
     height: 2rem; 
   }
   main {
-    position: relative;
+    /* position: relative; */
     overflow-y: auto; 
     overflow-x: hidden; 
     min-width: 320px;
@@ -60,7 +60,7 @@ header .logo img {
      background-color: #EE9B01; 
   } 
   .image-container {
-    position: relative; 
+    /* position: relative;  */
     width: 100%; /* Adjust as needed */
     margin: auto;
     height: 100vh;
@@ -72,7 +72,7 @@ header .logo img {
   }
   
   .image-container .content {
-    position: absolute;
+    /* position: absolute; */
     /* top: -20px; */
     left: 0;
     right: 100px;
@@ -621,7 +621,7 @@ header .logo img {
     }
 
   .timer-container {
-    margin-top: -100px;  /* Adjust as needed to position it at the bottom of the image */
+    margin-top: -70px;  /* Adjust as needed to position it at the bottom of the image */
   }
   .box {
     width: 100%; 
@@ -804,6 +804,15 @@ padding-right: 10px;
   line-height: 14.63px;
 }
   }
+  @media only screen and (max-width:360px){
+  .image-container .image img {
+      width: 370px;
+      height: 283.38px;
+    }
+    .image-container .content {
+      align-items: flex-start;
+    }
+  }
   @media only screen and (max-width: 320px){
   .image-container .image img {
       width: 330px;
@@ -831,7 +840,7 @@ padding-right: 10px;
     text-align: center;
   }
   .timer-container {
-    padding: 10px;
+    padding: 5px;
     margin-top: -70px;  /* Adjust as needed to position it at the bottom of the image */
   }
 
