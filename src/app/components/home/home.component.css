@@ -382,6 +382,13 @@ header .logo img {
     text-align: left;
     padding-left: 82px;
   }
+  .bottom-register-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
   .bottom-container{
     margin-top: 100px;
     border-top: 2px solid  #EE9B01;

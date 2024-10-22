@@ -120,7 +120,11 @@
         <ng-container *ngIf="currentDay === 2">
           <ng-container *ngTemplateOutlet="day2Template"></ng-container>
         </ng-container>
+        <div class="bottom-register-button">
+        <button class="register-button" (click)="navigateToRegister()">REGISTER NOW</button>
+      </div>
         <div class="bottom-container"> 
+          
           <div class="bottom-container-first">
             <div class="bottom-container-batch">
               <p class="bottom-container-title ">Organized by:</p>
