@@ -713,8 +713,8 @@ header .logo img {
     margin: 0px;
   }
   .schedule-table {
-padding-left: 10px;
-padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   }
   .schedule-table-right{
     width: 74.8%;
@@ -819,15 +819,26 @@ padding-right: 10px;
 }
   }
   @media only screen and (max-width:400px){
+    .image-container .image img {
+      width: 280px;
+      height: 210px;
+      padding-left: 50px;
+    }
     .small-image-container {
-      height: 422px;
+      height: 322px;
     }
-  }
-  @media only screen and (max-width:380px){
-  .image-container .image img {
-      width: 370px;
-      height: 283.38px;
+    .image-container .text {
+      margin-top: -25px;
     }
+    .image-container .text .text2 {
+      line-height: 2px;
+    }
+    .image-container .text .text3 {
+      font-size: 1.5rem;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+
     .image-container .content {
       align-items: flex-start;
     }
@@ -847,18 +858,17 @@ padding-right: 10px;
   .schedule-table th:last-child{
     min-width: 230px; 
   }
-  }
-  @media only screen and (max-width: 320px){
+  
+}
+@media only screen and (max-width:380px){
+
   .image-container .image img {
-      width: 330px;
-      height: 253.38px;
-    }  
-  .bottom-contact{
-    padding-top: 10px;
-    text-align: center;
+   padding-left: 40px;
   }
-  .timer-container {
-    padding: 5px;
-    margin-top: -70px;  /* Adjust as needed to position it at the bottom of the image */
+}
+@media only screen and (max-width:330px){
+
+  .image-container .image img {
+   padding-left: 20px;
   }
 }
