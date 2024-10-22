@@ -818,7 +818,7 @@ padding-right: 10px;
   margin-top: 0px;
 }
   }
-  @media only screen and (max-width:380px){
+  @media only screen and (max-width:400px){
     .small-image-container {
       height: 422px;
     }
