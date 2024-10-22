@@ -172,7 +172,7 @@ header .logo img {
     background-size: none; /* Ensure the background image covers the entire container */
     background-position: none; /* Center the background image */
     background-repeat:none;
-    background-color: #AE2012; 
+    background-color: transparent; 
     margin-top: -200px;
   }
 
