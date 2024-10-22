@@ -34,8 +34,11 @@
     justify-content: center;
     flex-direction: column;
   }
-  @media only screen and (max-width: 750px),only screen and (max-width: 450px), only screen and (max-width: 390px) 
+  @media screen and (min-width: 400px) and (max-width: 900px)
    {
+    .countdown {
+      padding: 0;
+    }
     .counter-text-main{
       font-size: 1.6rem;   
       min-width: 45px;   
@@ -48,7 +51,10 @@
     }
   }
 
-  @media only screen and (max-width: 360px){
+  @media only screen and (max-width: 400px){
+    .countdown {
+      padding: 0;
+    }
     .counter-text-main{
       font-size: 1.2rem;      
     }
