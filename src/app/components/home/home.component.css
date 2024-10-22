@@ -818,9 +818,7 @@ header .logo img {
   }
   
   @media screen and (min-width: 400px) and (max-width: 900px){
-    .small-image-container {
-      height: 400px;
-    } 
+    
     .bottom-container-first{
       justify-content: center;   
     }
