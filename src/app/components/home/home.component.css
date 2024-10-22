@@ -474,56 +474,8 @@ header .logo img {
   
     }
   }
-  @media only screen and (max-width: 1200px) {
-    .image-container .image img {
-      width: 554px;
-      height: 436px; 
-      padding-right: 150px;
-    }
-    .image-container .text {
-      flex: 1;
-      padding-left: 10%; /* Adjust as needed */
-      text-align: left;
-      /* margin-top: -50px; */
-    }
-    header .logo img {
-      width: 9rem;
-      height: 3.61rem;
-      top:1.2rem;
-      left: 4.4rem;
-      gap: 0px;
-      opacity: 0px;
-      padding: 20px 20px;
-      /* padding-left: 20px; */
-      }
-    .header-items {
-      padding-right: 40px;
-  }
-  }
-  @media only screen and (max-width: 1150px) {
-    .image-container .text {
-      flex: 1;
-      padding-left: 8%; /* Adjust as needed */
-      text-align: left;
-      /* margin-top: -90px; */
-    }
-    header .logo img {
-      width: 9rem;
-      height: 3.61rem;
-      top:1.2rem;
-      left: 4.4rem;
-      gap: 0px;
-      opacity: 0px;
-      padding: 20px 10px;
-      /* padding-left: 20px; */
-      }
-      .header-items {
-        padding-right: 30px;
-    
-    }
-    
-  }
-  @media only screen and (max-width: 750px),only screen and (max-width: 450px), only screen and (max-width: 390px) {
+ 
+  @media only screen and (max-width: 1300px){
     header {
       position: fixed;
       z-index: 1000;
