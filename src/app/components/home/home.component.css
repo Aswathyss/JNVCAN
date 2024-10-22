@@ -483,8 +483,44 @@ header .logo img {
     .image-container .text .text3 {
       font-size: 2.5rem;
     }
+    .bottom-container{
+      height:100px;
+    }
+    .bottom-container-first{
+      justify-content: flex-start;   
+    }
+    .bottom-container-batch{
+      display: flex;
+      flex-direction: column;
+      height:60px;
+    }
+    .bottom-contact{
+      height: 37px;
+    }
+    .bottom-contact span{
+      font-size: .9rem;
+    }
+    .alumni-mode-main{
+      height: 55px;
+    }
+    .bottom-container-body-contact{
+      font-size: .9rem;
+    }
+    .alumni-mode-container span {
+      font-size: .9rem;
+    }
+    .bottom-container-body {
+      font-size: 0.7rem;
+    }
+    .img-isolation-mode {
+      width: 150px;
+      height: 26px;
+    }
+    .batch-text {
+      margin-left: 25px;
+      margin-top: 0px;
+    }
   }
- 
   @media only screen and (max-width: 900px){
     header {
       position: fixed;
@@ -780,9 +816,18 @@ header .logo img {
   margin-top: 0px;
 }
   }
+  
   @media screen and (min-width: 400px) and (max-width: 900px){
     .small-image-container {
       height: 400px;
+    } 
+    .bottom-container-first{
+      justify-content: center;   
+    }
+    .bottom-container-batch{
+      display: flex;
+      flex-direction: column;
+      height:60px;
     }
   }
   @media only screen and (max-width:400px){
