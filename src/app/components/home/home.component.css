@@ -474,8 +474,18 @@ header .logo img {
   
     }
   }
+  @media screen and (min-width: 900px) and (max-width: 1100px) {
+    .image-container .image img {
+      width: 420px;
+      height: 336px;
+      padding-right: 150px;  
+    }
+    .image-container .text .text3 {
+      font-size: 2.5rem;
+    }
+  }
  
-  @media only screen and (max-width: 1000px){
+  @media only screen and (max-width: 900px){
     header {
       position: fixed;
       z-index: 1000;
@@ -769,6 +779,11 @@ header .logo img {
 .batch-text{
   margin-top: 0px;
 }
+  }
+  @media screen and (min-width: 400px) and (max-width: 900px){
+    .small-image-container {
+      height: 400px;
+    }
   }
   @media only screen and (max-width:400px){
     .image-container .image img {
