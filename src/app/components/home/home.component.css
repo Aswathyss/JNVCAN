@@ -473,10 +473,10 @@ header .logo img {
   text-decoration: none; /* Remove underline from links */
   
 }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1500px) {
     .image-container .image img {
-      width: 554px;
-      height: 436px;
+      width: 420px;
+      height: 336px;
       padding-right: 150px;
   
     }
