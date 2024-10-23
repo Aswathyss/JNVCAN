@@ -394,7 +394,7 @@ header .logo img {
     border-top: 2px solid  #EE9B01;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:first baseline;
     flex-direction: row;
     width: 100%;
   }
@@ -418,13 +418,13 @@ header .logo img {
   }
   .alumni-mode-container span{
     min-width: 150px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .bottom-container-first{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
+    width: 450px;
   }
   .alumni-mode-main{
     margin-left: 40px;
@@ -449,7 +449,7 @@ header .logo img {
     text-align: left;
   }
   .bottom-container-body-contact { 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
  .footer-container{
   display: flex;
@@ -495,6 +495,7 @@ header .logo img {
     }
     .bottom-container-first{
       justify-content: flex-start;   
+      width: 400px;
     }
     .bottom-container-batch{
       display: flex;
@@ -862,12 +863,7 @@ header .logo img {
     .schedule-table td {
       font-size: 0.65rem;
     }
-  .schedule-table {
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+  
   .schedule-table td:last-child {
     min-width: 230px; 
 
@@ -881,6 +877,14 @@ header .logo img {
 
   .image-container .image img {
    padding-left: 40px;
+  }
+}
+@media only screen and (max-width:350){
+  .schedule-table {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 @media only screen and (max-width:330px){

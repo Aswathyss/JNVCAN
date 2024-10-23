@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 55px;
   }
   @media screen and (min-width: 400px) and (max-width: 900px)
    {
@@ -49,6 +50,9 @@
     .counter-text-last{
       font-size: 0.7rem;
     }
+    .countdown-main{
+      min-width: 45px;
+     }
   }
 
   @media only screen and (max-width: 400px){
@@ -63,5 +67,8 @@
     }
     .counter-text-last{
       font-size: 0.6rem;
+    }
+    .countdown-main{
+     min-width: 40px;
     }
   }
