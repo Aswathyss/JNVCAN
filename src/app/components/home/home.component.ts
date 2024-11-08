@@ -19,7 +19,7 @@ export class HomeComponent {
     { time: '07:30 PM', name: 'Dance/Sinina' },
     { time: '08:00 PM', name: 'Dinner' },
     { time: '09:00 PM', name: 'Music Band' },
-    { time: '11:00 PM', name: 'Prize Distribution(Bumber,Selfie,Video & Song)' },
+    { time: '11:00 PM', name: 'Prize Distribution(Bumper,Selfie,Video & Song)' },
     { time: '11:30 PM', name: 'DJ-Chenda Fusion' },
     // Add more events as needed
   ];
