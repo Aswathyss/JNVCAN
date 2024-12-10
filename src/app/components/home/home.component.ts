@@ -11,22 +11,21 @@ export class HomeComponent {
   // Define events for Day 1 and Day 2
   day1Events = [
     { time: '02:00 PM', name: 'Inauguration' },
-    { time: '03:00 PM', name: 'Memento Distribution' },
-    { time: '03:15 PM', name: 'Stand-up Comedy (Mayavi)' },
+    { time: '03:30 PM', name: 'Memento Distribution' },
     { time: '04:00 PM', name: 'Chingari Melam' },
-    { time: '05:30 PM', name: 'Tea Break/Lelam' },
-    { time: '06:30 PM', name: 'Team Calicut Comedy Show' },
-    { time: '07:30 PM', name: 'Dance/Sinina' },
-    { time: '08:00 PM', name: 'Dinner' },
-    { time: '09:00 PM', name: 'Music Band' },
-    { time: '11:00 PM', name: 'Prize Distribution(Bumper,Selfie,Video & Song)' },
-    { time: '11:30 PM', name: 'DJ-Chenda Fusion' },
+    { time: '05:30 PM', name: 'Tea Break' },
+    { time: '06:30 PM', name: 'Comedy Show - Team Calicut' },
+    { time: '07:30 PM', name: 'Nritha Drisya Virunnu (Dance Show) - Narthaki School of Arts' },
+    { time: '08:30 PM', name: 'Dinner' },
+    { time: '09:30 PM', name: 'Octave\'s Music Band Show' },
+    { time: '11:00 PM', name: 'Music Show - Team JNVC Band' },
+    { time: '11:30 PM', name: 'Prize Distribution' },
+    { time: '12:00 PM', name: 'DJ-Chenda Fusion by DJ Psycho' },
     // Add more events as needed
   ];
 
   day2Events = [
-    { time: '09:00 AM', name: 'Event name and details to be updated' },
-    { time: '10:00 AM', name: 'Event name and details to be updated' },
+    { time: '10:00 AM', name: 'Tug of War (Batchwise)' },
     // Add more events as needed
   ];
 
