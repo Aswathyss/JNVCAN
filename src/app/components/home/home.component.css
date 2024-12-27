@@ -573,8 +573,12 @@ header .logo img {
       margin-left: 10px;
     }
     
-    header .social-links img {
+
+    header .social-links .image {
       height: 1rem; 
+    }
+    header .social-links .image-track {
+      height: 1.2rem; 
     }
     .image-container .image-mountain {
       width: 100%;
